@@ -3,7 +3,12 @@ import ffmpeg
 
 from faster_whisper import WhisperModel
 
-input_video = "magyar_peter_1.mp4"
+print ("Subtitle Generator:")
+print ("Please enter the name of the video you would like to add subtitles to.")
+print ("The video must be an mp4.")
+print()
+
+input_video = input("Enter video file name: ")
 input_video_name = input_video.replace(".mp4", "")
 
 def extract_audio():
